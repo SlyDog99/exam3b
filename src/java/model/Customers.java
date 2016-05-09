@@ -8,7 +8,7 @@ public class Customers {
     private String lastName;
     private String addr1;
     private String city;
-    private String stateAbr;
+    private String stateAbv;
     private int zip;
     private String emailAddr;
 
@@ -21,18 +21,18 @@ public class Customers {
         this.lastName = "";
         this.addr1 = "";
         this.city = "";
-        this.stateAbr = "";
+        this.stateAbv = "";
         this.zip = 0;
         this.emailAddr = "";
     }
     
-    public Customers(int customerID, String firstName, String lastName, String addr1, String city, String stateAbr, int zip, String emailAddr) {
+    public Customers(int customerID, String firstName, String lastName, String addr1, String city, String stateAbv, int zip, String emailAddr) {
         this.customerID = customerID;
         this.firstName = firstName;
         this.lastName = lastName;
         this.addr1 = addr1;
         this.city = city;
-        this.stateAbr = stateAbr;
+        this.stateAbv = stateAbv;
         this.zip = zip;
         this.emailAddr = emailAddr;
     }
@@ -77,14 +77,9 @@ public class Customers {
         this.city = city;
     }
 
-    public String getStateAbr() {
-        return stateAbr;
+    public String getStateAbv() {
+        return stateAbv;
     }
-
-    public void setStateAbr(String stateAbr) {
-        this.stateAbr = stateAbr;
-    }
-
     public int getZip() {
         return zip;
     }
@@ -102,17 +97,10 @@ public class Customers {
     }
 
     @Override
-    public String toString() {
-        return "Customers{" + "customerID=" + customerID + ", firstName=" + firstName + ", lastName=" + lastName + ", addr1=" + addr1 + ", city=" + city + ", stateAbr=" + stateAbr + ", zip=" + zip + ", emailAddr=" + emailAddr + '}';
-    }
+    public String toString(){
+        return "Customers{" + "customerID=" + customerID + ", firstName=" + firstName + ", lastName=" + lastName + ", addr1=" + addr1 + ", city=" + city + ", stateAbv=" + stateAbv + ", zip=" + zip + ", emailAddr=" + emailAddr + "}";
     
     
-    
-  
     }
 
-    
-    
-    
-    
-
+}
