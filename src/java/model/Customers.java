@@ -8,7 +8,6 @@ public class Customers {
     private String lastName;
     private String addr1;
     private String city;
-    private String stateAbv;
     private int zip;
     private String emailAddr;
 
@@ -21,7 +20,6 @@ public class Customers {
         this.lastName = "";
         this.addr1 = "";
         this.city = "";
-        this.stateAbv = "";
         this.zip = 0;
         this.emailAddr = "";
     }
@@ -32,7 +30,6 @@ public class Customers {
         this.lastName = lastName;
         this.addr1 = addr1;
         this.city = city;
-        this.stateAbv = stateAbv;
         this.zip = zip;
         this.emailAddr = emailAddr;
     }
@@ -77,9 +74,6 @@ public class Customers {
         this.city = city;
     }
 
-    public String getStateAbv() {
-        return stateAbv;
-    }
     public int getZip() {
         return zip;
     }
@@ -98,7 +92,7 @@ public class Customers {
 
     @Override
     public String toString(){
-        return "Customers{" + "customerID=" + customerID + ", firstName=" + firstName + ", lastName=" + lastName + ", addr1=" + addr1 + ", city=" + city + ", stateAbv=" + stateAbv + ", zip=" + zip + ", emailAddr=" + emailAddr + "}";
+        return "Customers{" + "customerID=" + customerID + ", firstName=" + firstName + ", lastName=" + lastName + ", addr1=" + addr1 + ", city=" + city + ", zip=" + zip + ", emailAddr=" + emailAddr + "}";
     
     
     }

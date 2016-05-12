@@ -110,6 +110,11 @@ public class ReadQuery {
                table += customer.getEmailAddr();
                table+= "</td>";
                
+               table+= "<td>";
+              table +="<a href=update?customerID="+ customer.getCustomerID() + "> Update </a>" + "<a href= delete?customerID=" + customer.getCustomerID() + "> Delete </a>";
+               table+= "</td>";
+               table+= "</tr>";
+               
            } } catch (SQLException ex) {
            Logger.getLogger(ReadQuery.class.getName()).log(Level.SEVERE, null, ex);
        }
